@@ -17,3 +17,28 @@
 ## Variables & Constraints
 
 ```
+1. create variable we use "var" then variable name + data type 
+    eg = var username string = "adyasha"
+2. %T = placeholder 
+3. var value uint8 = 255 -> thsi is fine 
+    BUT 
+   value uint8 = 256 (this will give an err) -> cannot use 256 (untyped int constant) as uint8 value in variable declaration (overflows)
+```
+
+## Default values & Alias
+
+```
+1. if u create a variable of type int and dont assign a value to it so the default value which is get associated is 0
+2. implicit way to assign a value
+	var name = "adyasha"
+	fmt.Println(name)
+	fmt.Printf("the name is of type : %T \n", name) // string
+
+3. declaration without var - just use this symbol ":=" || This is known as "Valorous Operator"
+    Note - cant be declared without a method
+	myName := "haadsaa"
+	fmt.Println(myName);
+    it will work fine , even if u change the value, the type will auto assign
+
+4. const LoginToken string = "fdsksjk"    = HERE capital L has certain significance like its a public accesiible token, 
+```
