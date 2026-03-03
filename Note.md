@@ -42,3 +42,14 @@
 
 4. const LoginToken string = "fdsksjk"    = HERE capital L has certain significance like its a public accesiible token, 
 ```
+## User Input 
+```
+1. read documentation about bufio, Os 
+2. we use reader := bufio..NewReader(os.Stdin) = this line helpful for taking inputs, 
+3.after this comes comma ok || err ok syntax
+4.input, _ := reader.ReadString('\n') 
+5. and then u print the input
+
+    thers a lot to know, as of now just got the idea how to write the syntax and how to get te user input 
+
+```
