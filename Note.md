@@ -53,3 +53,30 @@
     thers a lot to know, as of now just got the idea how to write the syntax and how to get te user input 
 
 ```
+
+## Connversions in Golang
+```
+1. lets say - u take an input , but go by default made this to string 
+2. now ifu want to add 1 to a the input so it will show u the err "can not convert"
+3. Solution - we will use a package known as "strconv" 
+4.numRating,err = strconv.ParseFloat(input,64) - in this we used strconv package,it has multiple function so we are using ParseFloat as of now, which takes 2 things as its parameter  
+            (i) - input ,and size which is 64 bits 
+            (ii) - as we pass 2 values so we need to obey comma ok syntax by adding "err" after the variable,
+5. Post to this we need to handle the err cautiosly 
+6. numRating,err := strconv.ParseFloat(input,64)
+	if err != nil {
+		fmt.Println(err)
+	}else {
+		fmt.Println("added 1 to your rating:: ", numRating+1)
+	} 
+
+    // in this code u will face an err like this 
+    err msz = he type of input is stringstrconv.ParseFloat: parsing "2\r\n": invalid syntax
+7. Solution - 
+        instead of this => `numRating,err := strconv.ParseFloat(input,64)`
+        we should use another package named "strings" 
+        `numRating,err := strconv.ParseFloat(strings.TrimSpace(input),64)`
+
+    // what we have done ? 
+    // we used strings package and inside that TrimSpace function to avoid that \n trailing , cause its the only thing which caused the err during conversion
+
