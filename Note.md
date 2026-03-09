@@ -105,3 +105,18 @@
                 for multiple platforms - $env:GOOS = "darwin"; $env:GOARCH = "amd64"; go build
 
 ```
+
+## Memory management in GO 
+```
+2 things - make() , new()
+1. New()                                    |  Make()
+-------------------------------------------------------------------------------------
+    (i) allocate memory but no init         | (i) allocate memory & Init
+    (ii) u will get a memory address        | (ii) u will get a memory address
+    (iii) zerod storage                     | (iii) no zerod storage
+
+2. Garbage collection happens automatically 
+3. out of scope or NIL
+4.The GOGC variable sets the initial garbage collection target percentage. A collection is triggered when the ratio of freshly allocated data to 
+    live data remaining after the previous collection reaches this percentage. The default is GOGC=100. Setting GOGC=off disables the garbage collector entirely. runtime/debug.SetGCPercent allows changing this percentage at run time.
+```
