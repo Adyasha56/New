@@ -92,3 +92,16 @@
 5. FOR TIME & Date - fmt.Println(presentTime.Format("01-02-2006  15:04:05")) - have to  use this time
 6. FOR TIME DATE & DAY - fmt.Println(presentTime.Format("01-02-2006 Monday 15:04:05"))
 ```
+
+## Build GO for diff OS
+```
+1. if i want to run a go code as well as it able to run in the mac & linux env as well 
+2. for that we will do few things
+        (i) - in the terminal run the command - go env
+        (ii) -it will show some parameters , among all GOOS is what , we deal with 
+        (iii) - now write the command $env:GOOS = "darwin"; go build if u are in powershell
+                powershell core - $env:GOOS="darwin"; go build
+                Windows sub system - GOOS="darwin" go build
+                for multiple platforms - $env:GOOS = "darwin"; $env:GOARCH = "amd64"; go build
+
+```
