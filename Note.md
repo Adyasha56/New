@@ -79,4 +79,16 @@
 
     // what we have done ? 
     // we used strings package and inside that TrimSpace function to avoid that \n trailing , cause its the only thing which caused the err during conversion
+```
 
+## Handling Time
+```
+1. for getting the current date - we do use time package
+2. presentTime := time.Now()
+	fmt.Println(presentTime) 
+    o/p = 2026-03-09 12:09:17.2904399 +0530 IST m=+0.000000001
+3. but the output looks messy, so we use 'Format()' func.
+4. FOR DATE - fmt.Println(presentTime.Format("01-02-2006")) - have to use this syntax
+5. FOR TIME & Date - fmt.Println(presentTime.Format("01-02-2006  15:04:05")) - have to  use this time
+6. FOR TIME DATE & DAY - fmt.Println(presentTime.Format("01-02-2006 Monday 15:04:05"))
+```
