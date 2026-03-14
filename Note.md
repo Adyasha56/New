@@ -127,3 +127,9 @@
 
     Ans- the prob in all prog lang is - whenever u declare a var, arr, u just a ref of memory. sometimes u pass on these var to a functions , the actual value is never passed on. sometimes a copy of these variables passed on into these multiple funcion. so arises the problem called - Irregularity. so to avoid these we use Pointer. So we pass the memoey address. to pass the actual value . 
 ```
+
+## Array in Golang
+```
+1. array is not that much used in golang 
+2. there is one another data type present in golang , which has more use cases than array
+```
