@@ -120,3 +120,10 @@
 4.The GOGC variable sets the initial garbage collection target percentage. A collection is triggered when the ratio of freshly allocated data to 
     live data remaining after the previous collection reaches this percentage. The default is GOGC=100. Setting GOGC=off disables the garbage collector entirely. runtime/debug.SetGCPercent allows changing this percentage at run time.
 ```
+
+## Pointers in golang
+```
+    1. why the pointer is needed?
+
+    Ans- the prob in all prog lang is - whenever u declare a var, arr, u just a ref of memory. sometimes u pass on these var to a functions , the actual value is never passed on. sometimes a copy of these variables passed on into these multiple funcion. so arises the problem called - Irregularity. so to avoid these we use Pointer. So we pass the memoey address. to pass the actual value . 
+```
