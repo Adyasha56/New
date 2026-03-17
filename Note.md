@@ -140,7 +140,11 @@ very important in golang
 1. Dynamic Resizing: Unlike arrays, which have a fixed size that is part of their type, slices can grow or shrink at runtime using the built-in append function.
 2. Memory Efficiency: Slices are small, fixed-size structures (the "slice header") that point to an existing array. Copying or passing a slice to a function only copies this small header, not the entire data set.
 3.Flexible Interface: Since a slice's length is not part of its type, you can write a single function that accepts slices of any size (e.g., []int), which is impossible with Go arrays (e.g., [5]int is a different type than [10]int).
-
-
+```
+## Maps In Go
+```
+1. store the data in the format of key val pair
+2. key can be anything s as value 
+3. not that musch string in case of Slices
 
 ```
