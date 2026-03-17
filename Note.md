@@ -147,4 +147,36 @@ very important in golang
 2. key can be anything s as value 
 3. not that musch string in case of Slices
 
+languages := make(map[string]string)
+
+	languages["js"] = "used more in web dev"
+	languages["py"] = "used more in AI-ML"
+	languages["c"] = "used more in embedded systems"
+
+    //all val
+    fmt.Println("the value inside the maps are: ", languages)
+
+    //individual val
+    fmt.Println("the value inside the maps are: ", languages["js])
+
+```
+## Structs in Golang
+```
+1. consider it as alternative of Class
+2. No inheritance in golang
+3. No super or parent
+eg:  
+//inside main func
+adyashaNanda := User{"Adyasha", "adyasha12@gmail.com", true, 23}
+fmt.Printf("the details of adyasha are: %+v\n", adyashaNanda)
+fmt.Printf("Name is : %v and email is: %v  ", adyashaNanda.Name,adyashaNanda.Email)
+
+//after main func
+type User struct {
+	Name   string
+	Email  string
+	Status bool
+	Age    int
+}
+
 ```
