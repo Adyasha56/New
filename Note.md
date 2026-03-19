@@ -180,3 +180,10 @@ type User struct {
 }
 
 ```
+
+## switch Case 
+```
+Simple like other languages
+* you need to write fallthrough- to compiling all other cases
+*  
+```
