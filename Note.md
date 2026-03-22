@@ -185,5 +185,13 @@ type User struct {
 ```
 Simple like other languages
 * you need to write fallthrough- to compiling all other cases
-*  
 ```
+
+## methods
+```
+in other object oriented language whenever a function goes inside a class we called it a method
+same in golang - whenever we use a function inside structs we call it a method. 
+
+- so yeah , there is not much about it
+```
+
