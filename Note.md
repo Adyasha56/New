@@ -217,3 +217,8 @@ world
 - Deferred function calls are pushed onto a stack. When a function returns, its deferred calls are executed in last-in-first-out order.
 - 
 ```
+
+## Hnadling Web request
+```
+1.ReadResponse nor Response.Write ever closes a connection.
+```
