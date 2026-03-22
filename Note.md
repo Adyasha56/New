@@ -195,3 +195,25 @@ same in golang - whenever we use a function inside structs we call it a method.
 - so yeah , there is not much about it
 ```
 
+## Defer in Go 
+```
+A defer statement defers the execution of a function until the surrounding function returns.
+The deferred call's arguments are evaluated immediately, but the function call is not executed until the surrounding function returns.
+eg:
+    package main
+
+    import "fmt"
+
+    func main() {
+	    defer fmt.Println("world")
+
+	    fmt.Println("hello")
+    }
+
+outout - 
+hello
+world    
+---
+- Deferred function calls are pushed onto a stack. When a function returns, its deferred calls are executed in last-in-first-out order.
+- 
+```
